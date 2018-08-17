@@ -1,0 +1,146 @@
+// 页面公共样式，非公用样式写在各个组件里
+
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select ,nav, strong, time, button{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin:0;color:#333;
+    font-size: 14px;
+}
+
+html {
+  margin: 0 auto;
+  background: $bg-color;
+}
+
+input, button, textarea{
+    outline: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+textarea{
+    resize: none;
+}
+
+.download-link {
+  color: $color-main;
+}
+//超出隐藏
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+//字号
+.fs14 {
+    font-size: $fs14;
+}
+.fs16 {
+    font-size: $fs16;
+}
+.fs18 {
+    font-size: $fs18;
+}
+.fs20 {
+    font-size: $fs20;
+}
+.fs22 {
+    font-size: $fs22;
+}
+.fs24 {
+    font-size: $fs24;
+}
+//页面中间宽1080
+.content_max{
+    width: 1080px;
+    margin: 0 auto;
+    background-color:#ffffff;
+    overflow: hidden;
+    padding: 30px 40px;
+}
+//页面中间宽950
+.content_min{
+    width: 950px;
+    margin: 0 auto;
+    background-color:#ffffff;
+    overflow: hidden;
+    padding: 30px 40px;
+}
+
+//分页样式
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+    background: #59B6D7;
+}
+
+//滚动条
+::-webkit-scrollbar {width:2px;height:2px;background-color:#F5F5F5;}
+::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:10px;background-color:#F5F5F5;}
+::-webkit-scrollbar-thumb {border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);background-color:#555;}
+
+//表格边框
+.el-table td, .el-table th.is-leaf{
+    border-bottom: none;
+}
+
+//分页鼠标移入
+.number:hover{
+    box-shadow: 0 0 2px #59B6D7;
+    color: #59B6D7;
+}
+
+//label表单字体颜色
+.el-form-item__label{
+    color: $color-99;
+    padding: 0 20px 0 0;
+}
+//chenk  边框颜色
+.el-checkbox__label{
+    color: $color-99;
+}
+//check字体选中颜色
+.el-checkbox__input.is-checked+.el-checkbox__label{
+    color: #59b6d7;
+}
+//check框选中颜色
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: #59b6d7;
+    border-color: #59b6d7;
+}
+//textarea禁止拖动
+.el-textarea__inner{
+    resize: none;
+}
+//textarea报名资格
+.textarea1{
+    .el-textarea__inner{
+        height: 75px;
+    }
+}
+//textarea活动详情
+.textarea2{
+    .el-textarea__inner{
+        height: 140px;
+    }
+}
+
+//时间组件
+.el-date-table td.current:not(.disabled) span{
+    background-color: #59B6D7;
+}
+
+//弹出框
+.el-dialog__body {
+    padding: 15px 20px;
+
+}
+.textarea3{
+    .el-textarea__inner{
+        height: 140px;
+    }
+}
